@@ -9,6 +9,7 @@ Features:
  - c# and android client app to control the slider (coming soon with sources)
  
  
+ 
 Hardware
 =============
 
@@ -23,8 +24,18 @@ More info available on our website, but currently in Hungarian.
 Video, images and description available at http://techfactory.hu/muhely/egyeb/motoros-kamera-slider-hazilag.15
 
 
+
 Electronics
 =============
+	- ESP8266 (ESP12-F)
+	- DRV8825
+	- Voltage regulator (12V to 3.3V)
+	- Jumper or push button (for flash mode)
+	- 2x limit switch
+	- Stepper motor 
+	- 4x 10kOhm resistor
+	
+	
 ![TFSlider schematic](http://techfactory.hu/static/content/2017/09/tsslider_fritzing.jpg)
 ![TFSlider schematic](http://techfactory.hu/static/content/2017/09/tsslider_schematic.jpg)
 
