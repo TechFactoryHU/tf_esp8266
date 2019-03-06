@@ -1,10 +1,11 @@
 Various programs for ESP8266.
 
- - TFSlider: Camera slider project (ESP + DRV8825 + Stepper motor; with full networking & remote control support)
+ - TFLight v1.1:  Light controller for led strips (RGB/RGBW/W/NeoPixel/WS2812)
+ - TFSlider v1.0: Camera slider project (ESP + DRV8825 + Stepper motor; with full networking & remote control support)
 
 Coming soon
 ==========
- - TFLight: RGB and NeoPixel strip controller
+ - New TFSlider version, WS2812 led matrix
  - C# and Android controller app 
  
 
