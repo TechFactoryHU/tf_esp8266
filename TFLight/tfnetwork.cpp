@@ -99,15 +99,12 @@ void TFNetwork::SetAP(String Apssid, String APpassword, bool update) {
 }
 
 void TFNetwork::StartAp() {
-	if (softAp) {
-		TFNetwork::StopAp();
-	}
 	if (_cfg->exists("AP") && _cfg->exists("PWD")) {
 		TFNetwork::StartAp(_cfg->getString("AP"), _cfg->getString("PWD"));
 	}
 }
 
-void TFNetwork::StartAp(String ssid, String password) {	
+void TFNetwork::StartAp(String ssid, String password) {
 	uint8_t ch = TFNETWORK_WIFI_CH;
 	if (_cfg->exists("NCH") && _cfg->getInt("NCH") > 0) {
 		ch = _cfg->getInt("NCH");
@@ -118,8 +115,6 @@ void TFNetwork::StartAp(String ssid, String password) {
 				softAp = true;
 			}
 		}
-	}else {
-		WiFi.softAP(ssid.c_str(), password.c_str(), ch, 0);
 	}
 }
 
